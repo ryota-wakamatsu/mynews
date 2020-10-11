@@ -21,6 +21,9 @@
         
     </head>
     <body>
+         @guest
+            <li><a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a></li>
+        
         <h1>編集する</h1>
     </body>
 </html>

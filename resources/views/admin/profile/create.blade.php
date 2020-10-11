@@ -10,7 +10,11 @@
         
     </head>
     <body>
-        @extends('layouts.profile')
+         @guest
+            <li><a class="nav-link" href="{{ route('login') }}">{{ __('login') }}</a></li>
+         @endguest
+        
+         @extends('layouts.profile')
 
          @section('title', 'My プロフィール')
 
@@ -18,6 +22,7 @@
          
         <h1>My プロフィール</h1>
         
+       
          
     </body>
 </html>
