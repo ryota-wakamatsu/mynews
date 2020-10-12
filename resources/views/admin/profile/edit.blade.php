@@ -21,11 +21,13 @@
         
     </head>
     <body>
-          @extends('layouts.profile')
+          @extends('layouts.admin')
 
          @section('title', 'My プロフィール')
 
          @section('content')
+         
+       
          
         <h1>編集する</h1>
     </body>
