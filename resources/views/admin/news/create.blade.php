@@ -28,6 +28,12 @@
                             </ul>
                         @endif
                         <div class="form-group row">
+                          <label class="col-md-2">タイトル</label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            </div>
+                        </div> 
+                        <div class="form-group row">
                             <label class="col-md-2">本文</label>
                             <div class="col-md-10">
                                 <textarea class="form-control" name="body" rows="20">{{ old('body') }}
